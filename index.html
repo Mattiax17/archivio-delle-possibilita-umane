@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>L'Archivio delle Possibilità Umane</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>L'Archivio delle Possibilità Umane</h1>
+    <p>Un viaggio interattivo dentro emozioni e scelte umane.</p>
+  </header>
+  <main>
+    <section id="intro">
+      <h2>Benvenuto</h2>
+      <p>Questo archivio digitale racconta l'animo umano tramite un'esperienza interattiva.</p>
+    </section>
+
+    <section id="choose">
+      <h2>Fai una scelta</h2>
+      <p>Scegli una delle opzioni per esplorare un possibile futuro:</p>
+      <button onclick="scegli('speranza')">Speranza</button>
+      <button onclick="scegli('paura')">Paura</button>
+      <button onclick="scegli('curiosita')">Curiosità</button>
+    </section>
+
+    <section id="result" style="display:none;">
+      <h2>Risultato</h2>
+      <p id="testo-risultato"></p>
+      <button onclick="reset()">Ricomincia</button>
+    </section>
+  </main>
+  <footer>
+    <small>Creato come capolavoro interattivo - 2025</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
